@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap'); 			/* Bellefair font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap'); 	/* Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');					/* Abel font */
+/*
+CSS Rules for the fonts
+font-family: 'Inter', sans-serif; 		//for the Inter font
+font-family: 'Bellefair', sans-serif; 	//for the Bellefair font
+font-family: 'Abel', sans-serif;		//for the Abel font
+*/
+
+		body{
+			font-family: 'Bellefair', sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		div {
+			margin: 0;
+			padding: 0;
+		}
+		.h1, .h2, .h3, .h4, .h5 {
+			margin: 0;
+			padding: 0;
+		}
+		h1, h2, h3, h4, h5, p{
+			font-weight: 300;
+		}
+		hr {
+			height: 5px;
+			background-color: white;
+			border: none;
+			width: 75%;
+			border-radius: 2vw;
+		}
+		button {
+			cursor: pointer;
+		}
+
+		.container {
+			display: inline;
+		}
+
+		.flexcontainer {
+			display: flex;
+		}
+
+		.column-flex-center {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.fade-in {
+		  opacity: 0;
+		  transform: translateY(20px);
+		  transition: opacity 1s, transform 1s;
+		}
+
+		.fade-in.active {
+		  opacity: 1;
+		  transform: translateY(0);
+		}
+
+		/* For the rectangular background of other pieces of text, but not a button */
+		.text-rectangle {
+		    background-color: goldenrod;
+		    border-radius: 40px;
+		    max-width: 20vw;
+		    max-height: auto;
+		}
+
+		/* CSS For Button Objects */
+		/**************************/
+
+		/* Button properties */
+		.button {
+			display: flex;
+			align-items: center;
+		}
+
+		/* Styles the link (Button) */
+		.button-content {
+			text-decoration: none;
+			color: black;
+			font-family: 'Bellefair', serif;
+			text-align: center;
+			position: relative;
+			transition: all 0.2s;
+		}
+
+		/* Controls the size of the button image */
+		.button-content > img {
+			height: auto;
+			max-width: 60vw;
+		}
+
+		/* Centers the text inside the button */
+		.button-content > .centered {
+			position: absolute;
+			top: 50%;
+			left: 27%;
+			transform: translate(-10%, -50%);
+		}
+
+		/* End CSS For Button Objects */
+
+		.table {
+			margin-left: 19%;
+			color: white;
+			border-collapse: collapse;
+			text-align: center;
+			width: 65vw;
+		}
+		.td, .th {
+			padding: 1vw;
+			border: 1px solid white;
+		}
+		.th {
+			font-size: 2vw;
+		}
+		.table-img {
+			width: 3vw;
+			height: auto;
+		}
+
+		#guide-icon {
+	      position: fixed;
+	      top: 130px;
+	      right: 20px;
+	      background-color: goldenrod;
+	      color: #ffffff;
+	      padding: 8px 12px;
+	      border-radius: 50px;
+	      cursor: pointer;
+	      z-index: 100;
+	    }
+
+	    #guide-icon:hover {
+	    	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	    }
+
+	    #guide-dropdown {
+	      display: none;
+	      position: fixed;
+	      top: 150px;
+	      right: 20px;
+	      background-color: #ffffff;
+	      border: 1px solid #ccc;
+	      padding: 10px;
+	      max-height: 200px;
+	      overflow-y: auto;
+	      z-index: 1000;
+	      list-style: none; 
+          padding: 0;
+	    }
+
+	    .guide-dropdown-content {
+	      font-family: 'Bellefair', sans-serif;
+	      color: black;
+	      border: none;
+	      padding: 8px 12px;
+	      margin: 10px;
+	      cursor: pointer;
+	      display: block;
+	      text-decoration: none;
+	    }
+
+	    .guide-dropdown-content:hover {
+	      background-color: darkgoldenrod;
+	      color: white !important;
+	    }
+
+		.container1 {
+			background-image: url(img/Guidepage_BeginnerBanner.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			width: auto;
+			height: 100%;
+			margin-top: 7.9%;
+		}
+		.text-in-container1 {
+		    background-color: rgba(0, 0, 0, 0.5);
+		    border-radius: 5px;
+		    text-align: center;
+		}
+
+		.container2 {
+			background-image: url(img/Guidepage_ExploreAstra.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			width: auto;
+			height: 100%;
+			padding-top: 20vh;
+			padding-bottom: 30vh;
+		}
+
+		.container3 {
+			background-image: url(img/Guidepage_Mastering-Aetherflux.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			width: auto;
+			height: 100%;
+			padding-top: 20vh;
+			padding-bottom: 30vh;
+		}
+
+		.text-rectangle {
+			background-color: goldenrod;
+			border-radius: 5vw;
+		}
+		button {
+			border: none;
+			font-family: 'Bellefair', sans-serif;
+		}
+
+		.container4 {
+			background-image: url(img/bluebg.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			width: auto;
+			height: 100%;
+			padding-top: 2vh;
+			padding-bottom: 10vh;
+		}
+		.table-container {
+			font-family: 'Inter', sans-serif;
+			padding-bottom: 10vh;
+		}
+
+		.container5 {
+			background-image: url(img/Guidepage_Advancingyourchara.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			width: auto;
+			height: 50%;
+			padding-top: 2vh;
+			padding-bottom: 10vh;
+		}
+
+		.container6 {
+			background-image: url(img/Guidepage_Establishingteams.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			width: auto;
+			height: 50%;
+			padding-top: 2vh;
+			padding-bottom: 10vh;
+		}
+
+		.container7 {
+			background-image: url(img/Guidepage_AetherCrystalSummoning.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			width: auto;
+			height: 30%;
+			padding-top: 2vh;
+			padding-bottom: 10vh;
+		}
+
+		.container8 {
+			background-image: url(img/Guidepage_GuideToAetherCrystal.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			width: auto;
+			height: 200vh;
+			padding-top: 10vw;
+			padding-bottom: 10vh;
+		}
+		.p-in-table8 {
+			padding: 1vh;
+			font-size: 1.9vh;
+			color: white;
+			font-family: 'Abel', sans-serif;
+		}
+		.panel-in-container8 {
+		    background-color: rgba(255, 255, 255, 0.5);
+		    border: solid 3px white;
+		    border-radius: 5px;
+		    width: 15vw;
+		    height: 15vh;
+		}
+		.text-in-container8 {
+		    text-align: center;
+		    margin-top: 4.8vh;
+		    font-size: 2vw;
+		}
+		.tooltip-left, .tooltip-right {
+		    position: relative;
+		}
+		.tooltip-left {
+		    left: 0;
+		}
+		.tooltip-right {
+		    right: 0;
+		}
+		.tooltip-left .tooltip-content,
+		.tooltip-right .tooltip-content {
+		    display: none;
+		    position: absolute;
+		    top: 100%;
+		    width: 100%;
+		    background-color: rgba(255, 255, 255, 0.9);
+		    border-radius: 8px;
+		    padding: 10px;
+		    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		}
+		.tooltip-left .tooltip-content {
+		    left: 0;
+		}
+		.tooltip-right .tooltip-content {
+		    right: 0;
+		}
+		.tooltip-left:hover .tooltip-content {
+			position: relative;
+		    display: block;
+		    background-color: transparent;
+		    box-shadow: none;
+		}
+		.tooltip-right:hover .tooltip-content {
+			position: relative;
+		    display: block;
+		    background-color: transparent;
+		    box-shadow: none;
+		}
+
+		.container9 {
+			background-image: url(img/Guidepage_BossGuide.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			width: auto;
+			height: 20vh;
+			padding-top: 10vw;
+			padding-bottom: 10vh;
+		}
+		
+		.container10 {
+			background-color: white;
+			width: auto;
+			height: 100%;
+			padding-top: 6vw;
+			font-family: 'Inter', sans-serif;
+		}
+		.img-in-table10 {
+			width: 25vw;
+			height: auto;
+		}
+		.btn-in-container10 {
+			font-family: 'Inter', sans-serif; 
+			font-size: 2vw;
+			padding: 1.2vw;
+		}
+
+		.container11 {
+			background-image: url(img/Guidepage_BossGuide_Rewardsbg.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			width: auto;
+			height: 45vh;
+			margin-top: -1.2vh;
+			padding: 10vw 30vw 10vh 30vw;
+		}
+
+		/* CONTAINERS FOR THE CHARACTER GUIDE */
+		.container12 {
+			background-image: url(img/Guidepage_Character.png);
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			width: auto;
+			height: 40vh;
+			padding: 2vw;
+		}
+		.container13 {
+			position: relative;
+			background-color: black;
+			width: auto;
+			height: 130vh;
+			padding: 5px;
+		}
+		.layer2-container13 {
+			position: absolute;
+			z-index: 2;
+			font-size: 1vw;
+			font-weight: bolder;
+			font-family: 'Inter', sans-serif; 
+			width: 99%;
+			height: auto;
+			justify-content: center;
+		}
+		.fancy-frame-cae {
+		    border: 2px solid #ffb6c1; /* Border color */
+		    padding: 15px; /* Padding inside the frame */
+		    background: linear-gradient(45deg, #ffb6c1, #ffdfba, #ffffba, #ffb6c1); /* Gradient background */
+		    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+		    width: 100%;
+		    margin-left: -1vw;
+		}
+		.fancy-frame-estela {
+		    border: 2px solid #9400d3; /* Border color */
+		    padding: 15px; /* Padding inside the frame */
+		    background: linear-gradient(45deg, #9400d3, #c77dff, #fad0ff); /* Gradient background */
+		    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+		    width: 100%;
+		    margin-left: -1vw;
+		}
+		.fancy-frame-marina {
+		    border: 2px solid #00bfff; /* Border color */
+		    padding: 15px; /* Padding inside the frame */
+		    background: linear-gradient(45deg, #00bfff, #00ffff); /* Gradient background */
+		    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+		    width: 100%;
+		    margin-left: -1vw;
+		}
+		.fancy-frame-kairos {
+		    border: 2px solid #ffd700; /* Border color */
+		    padding: 15px; /* Padding inside the frame */
+		    background: linear-gradient(45deg, #ffd700, #ffe4b5, #ffa500); /* Gradient background */
+		    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+		    width: 100%;
+		    margin-left: -1vw;
+		}
+		.fancy-frame-aria {
+		    border: 2px solid #8b008b; /* Border color */
+		    padding: 15px; /* Padding inside the frame */
+		    background: linear-gradient(45deg, #8b008b, #ff6ec7, #4b0082); /* Gradient background */
+		    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+		    width: 100%;
+		    margin-left: -1vw;
+		}
+		.fancy-frame-rrhus {
+		    border: 2px solid #ff4500; /* Border color */
+		    padding: 15px; /* Padding inside the frame */
+		    background: linear-gradient(45deg, #ff4500, #ff9900, #bdb76b); /* Gradient background */
+		    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+		    width: 100%;
+		    margin-left: -1vw;
+		}
+		.fancy-frame-faye {
+		    border: 2px solid #8b4513; /* Border color */
+		    padding: 15px; /* Padding inside the frame */
+		    background: linear-gradient(45deg, #8b4513, #f4a460, #cd853f, #a0522d); /* Gradient background */
+		    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+		    width: 100%;
+		    margin-left: -1vw;
+		}
+		.fancy-frame-silvanus {
+		    border: 2px solid #ffeb3b; /* Border color */
+		    padding: 15px; /* Padding inside the frame */
+		    background: linear-gradient(45deg, #fff5e1, #ffeb3b); /* Gradient background */
+		    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+		    width: 100%;
+		    margin-left: -1vw;
+		}
+		.fancy-frame-miku {
+		    border: 2px solid #3498db; /* Border color */
+		    padding: 15px; /* Padding inside the frame */
+		    background: linear-gradient(45deg, #3498db, #ecf0f1); /* Gradient background */
+		    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+		    width: 100%;
+		    margin-left: -1vw;
+		}
+
+		.row {
+			display: flex;
+		}
+
+
+		/* Style for the accordion container */
+	    .accordion-container {
+	      max-width: 90vw;
+	      margin: 20px auto;
+	    }
+
+	    /* Style for the accordion border */
+	    .accordion-border {
+		    position: relative;
+		    background-image: url('img/Guidepage_CharacterGuide_Caelestis.png');
+		    background-size: cover;
+		    background-position: center;
+		    width: auto;
+  			height: auto;
+		}
+
+	    /* Style for accordion items */
+	    .accordion-item {
+	      margin-bottom: 5px;
+	      overflow: hidden;
+	      color: white;
+	    }
+
+	    /* Style for accordion headings */
+	    .accordion-heading {
+	      background-color: transparent;
+	      padding: 10px;
+	      cursor: pointer;
+	      display: flex;
+	      transition: background-color 0.3s ease, color 0.3s ease;
+	    }
+
+	    /* Hover effect for accordion headings */
+		.accordion-heading:hover {
+		  background-color: #F2B733;
+		  color: white;
+		}
+
+	    /* Style for accordion content */
+	    .accordion-content {
+	      overflow: hidden;
+		  max-height: 0;
+		  transition: max-height 0.4s ease-out;
+		  background-color: rgba(0, 0, 0, 0.7);
+		  padding-left: 2vw;
+		  padding-right: 2vw;
+	    }
+
+	    /* Show accordion content when active */
+		.accordion-item.active .accordion-content {
+		  max-height: 500px;
+		}
+
+	    /* STYLES FOR GRADIENT BACKGROUND WITH ANIMATION */
+	    .gradient-cae {
+            background: linear-gradient(90deg, 
+            	rgba(255, 182, 193, 1), 
+            	rgba(255, 223, 186, 1), 
+            	rgba(255, 255, 186, 1), 
+            	rgba(255, 182, 193, 1)
+            );
+            background-size: 900% 900%; 
+            animation: gradientTransition 15s infinite linear;
+        }
+        .gradient-estela {
+            background: linear-gradient(90deg, 
+            	rgba(148, 87, 235, 0.7),	/* Neon Purple */
+		        rgba(230, 144, 255, 0.5),
+		        rgba(196, 161, 225, 0.7),  /* Pastel Purple */
+		        rgba(230, 144, 255, 0.5),  /* Pale Magenta */
+		        rgba(148, 87, 235, 0.7)
+		    );
+            background-size: 900% 900%; 
+            animation: gradientTransition 15s infinite linear;
+        }
+        .gradient-marina {
+            background: linear-gradient(90deg, 
+            	rgba(0, 255, 255, 0.7),   /* Neon Blue */
+		        rgba(77, 208, 225, 1),
+		        rgba(77, 208, 225, 1), /* Neon Cyan */
+            	rgba(0, 255, 255, 0.7)
+            );
+            background-size: 900% 900%; 
+            animation: gradientTransition 20s infinite linear;
+        }
+        .gradient-kairos {
+            background: linear-gradient(90deg, 
+            	rgba(255, 255, 153, 1),  /* Pastel Yellow */
+		        rgba(255, 204, 153, 0.9),  /* Pale Orange */
+		        rgba(255, 255, 153, 1),
+		        rgba(255, 204, 153, 0.9),
+		        rgba(255, 255, 153, 1)
+            );
+            background-size: 900% 900%; 
+            animation: gradientTransition 20s infinite linear;
+        }
+        .gradient-aria {
+            background: linear-gradient(90deg, 
+            	rgba(75, 0, 130, 0.7),    /* Dark Purple */
+		        rgba(148, 0, 211, 0.7),   /* Neon Purple */
+		        rgba(50, 0, 50, 1),      /* Dull Dark Neon Purple */
+		        rgba(148, 0, 211, 0.7),
+		        rgba(75, 0, 130, 0.7)
+            );
+            background-size: 900% 900%; 
+            animation: gradientTransition 20s infinite linear;
+        }
+        .gradient-rrhus {
+            background: linear-gradient(90deg, 
+            	rgba(255, 69, 0, 0.7),	/* Reddish-Orange */
+		        rgba(255, 165, 0, 0.7),    /* Neon Orange */
+		        rgba(184, 134, 11, 1),     /* Dull Yellow */
+		        rgba(255, 165, 0, 0.7),
+		        rgba(255, 69, 0, 0.7)
+            );
+            background-size: 900% 900%; 
+            animation: gradientTransition 15s infinite linear;
+        }
+        .gradient-faye {
+            background: linear-gradient(90deg, 
+            	rgba(139, 69, 19, 0.7),   /* Saddle Brown */
+		        rgba(244, 164, 96, 0.7),  /* Sandy Brown */
+		        rgba(205, 133, 63, 0.7),  /* Peru */
+		        rgba(160, 82, 45, 0.7)    /* Sienna */
+            );
+            background-size: 900% 900%; 
+            animation: gradientTransition 20s infinite linear;
+        }
+        .gradient-silvanus {
+            background: linear-gradient(90deg, 
+            	rgba(255, 255, 255, 0.7),   /* White */
+		        rgba(255, 255, 0, 0.7),     /* Yellow */
+		        rgba(255, 255, 255, 0.7),   /* White */
+		        rgba(255, 255, 0, 0.7)      /* Yellow */
+            );
+            background-size: 900% 900%; 
+            animation: gradientTransition 20s infinite linear;
+        }
+        .gradient-miku {
+            background: linear-gradient(90deg, 
+            	rgba(0, 255, 255, 0.7),   /* Cyan */
+        		rgba(0, 0, 255, 0.5),       /* Blue */
+        		rgba(0, 128, 255, 0.7),	/* Water Blue */
+        		rgba(0, 0, 255, 0.5),
+        		rgba(0, 255, 255, 0.7)
+            );
+            background-size: 900% 900%; 
+            animation: gradientTransition 15s infinite linear;
+        }
+        @keyframes gradientTransition {
+            0% {
+                background-position: 0%;
+            }
+            100% {
+                background-position: 100%;
+            }
+        }
+
+
+	    /* STYLES FOR THE BOSS BOXES */
+	    .card-cell {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+			margin: 0;
+			padding: 0;
+        }
+        .card-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 0;
+			margin: 0;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+			max-width: 90%;
+        }
+		.card-content p {
+			font-size: 1.6vh;
+			text-align: justify;
+		}
+		.card-content b {
+			font-size: 4.5vh;
+		}
+        .card-cell:hover .card-content {
+            transform: translateY(3%);
+			margin: 0;
+			padding: 15px 25px 15px 25px;
+        }

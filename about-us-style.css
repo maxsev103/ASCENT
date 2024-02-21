@@ -1,0 +1,891 @@
+/* Imported fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap'); 			/* Bellefair font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap'); 	/* Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');					/* Abel font */
+
+body, html {
+	margin: 0;
+	background-color: black;
+	font-family: 'Bellefair', sans-serif;
+}
+
+h1 {
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: inline;
+}
+
+.flexcontainer {
+	display: flex;
+}
+
+.column-flex-center {
+	flex-direction: column;
+	align-items: center;
+}
+
+/* For the rectangular background of other pieces of text, but not a button */
+.text-rectangle {
+    background-color: goldenrod;
+    border-radius: 40px;
+    max-width: 20vw;
+    max-height: auto;
+}
+
+/* CSS For Button Objects */
+/**************************/
+
+/* Button properties */
+.button {
+	display: flex;
+	align-items: center;
+}
+
+/* Styles the link (Button) */
+.button-content {
+	text-decoration: none;
+	color: black;
+	font-family: 'Bellefair', serif;
+	text-align: center;
+	position: relative;
+	transition: all 0.2s;
+}
+
+/* Controls the size of the button image */
+.button-content > img {
+	height: auto;
+	max-width: 20vw;
+}
+
+/* Centers the text inside the button */
+.button-content > .centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.button-content:hover {
+	transform: scale(1.05);
+}
+/* End CSS For Button Objects */
+
+
+/* Add styles for the particles container */
+.particles-container {
+    position: relative;
+    overflow: hidden;
+    pointer-events: none; /* Allow interaction with underlying elements */
+     background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('path/to/crystal-image.png');
+    background-size: 50px 50px; /* Adjust the particle size */
+    background-image: radial-gradient(circle, rgba(255, 182, 193, 0.6) 5%, transparent 5%); /* Crystal color */
+    animation: crystalAnimation 3s linear infinite;
+}
+
+@keyframes crystalAnimation {
+    0% {
+        transform: translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.container1 {
+	margin-top: 17vh;
+	background-image: url('./img/abstractbg2.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.content-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10vh;
+	margin-left: 2vw;
+}
+
+.text-in-container {
+	max-width: 60vw;
+	font-size: 1.7rem;
+	margin-left: 7vw;
+}
+
+.black-square {
+	width: 15vw;
+	height: 15vw;
+	border-radius: 25px;
+	margin-top: 2vh;
+	position: relative;
+}
+
+@keyframes gradientGlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gradient {
+	background: radial-gradient(circle, rgba(255, 182, 193, 0.3) 0%, rgba(216, 191, 216, 0.3) 50%, rgba(173, 216, 230, 0.3) 100%);
+    animation: gradientGlow 3s linear infinite;
+    background-size: 900% 900%;
+}
+
+.black-square > img.centered {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@keyframes particleAnimation {
+    0% {
+        transform: translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.divider {
+	background-image: url('./img/abstractbg2.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.gold-line {
+	border-radius: 2px;
+	background-color: #DFA143;
+	height: 5px;
+	width: 90%;
+	margin-left: 5%;
+	position: static;
+}
+
+.container2 {
+	background-image: url('./img/abstractbg2.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-size: contain;
+	width: 100%;
+	height: 180vh;
+	overflow: hidden;
+}
+
+.profile-photos {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-top: 15vh;
+}
+
+.profile-container1 {
+	background-color: #D9D9D9;
+	border-radius: 20px;
+	width: 300px;
+	height: 400px;
+	margin-left: 10%;
+	overflow: hidden;
+	transition: 0.8s;
+	-webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+		filter: grayscale(0%);
+}
+
+.carl {
+	background: url('./img/creators/carl2.jpg') center center no-repeat;
+	background-size: 300px;
+}
+
+.carl:hover {
+	background: url('./img/creators/carl2.jpg') left center no-repeat;
+	background-size: 500px;
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+		filter: grayscale(100%);
+}
+
+.yesh {
+	background: url('./img/creators/yesheeesh2.jpg') center center no-repeat;
+	background-size: 300px;
+}
+
+.yesh:hover {
+	background: url('./img/creators/yesheeesh2.jpg') left center no-repeat;
+	background-size: 500px;
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+		filter: grayscale(100%);
+}
+
+.meja {
+	background: url('./img/creators/meja.jpg') center center no-repeat;
+	background-size: 300px;
+}
+
+.meja:hover {
+	background: url('./img/creators/meja.jpg') left bottom no-repeat;
+	background-size: 500px;
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+		filter: grayscale(100%);
+}
+
+.profile-container1:hover .text-border, .profile-container2:hover .text-border {
+	opacity: 100%;
+	transition: opacity 0.3s;
+}
+
+.profile-container2 {
+	background-color: #D9D9D9;
+	border-radius: 20px;
+	width: 300px;
+	height: 400px;
+	margin-left: 10%;
+	overflow: hidden;
+	transition: 0.8s;
+	-webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+		filter: grayscale(0%);
+}
+
+.max {
+	background: url('./img/creators/mex.jpg') center center no-repeat;
+	background-size: 300px;
+}
+
+.max:hover {
+	background: url('./img/creators/mex.jpg') left bottom no-repeat;
+	background-size: 500px;
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+		filter: grayscale(100%);
+}
+
+.gess {
+	background: url('./img/creators/gessa.jpg') center center no-repeat;
+	background-size: 300px;
+}
+
+.gess:hover {
+	background: url('./img/creators/gessa.jpg') left center no-repeat;
+	background-size: 500px;
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+		filter: grayscale(100%);
+}
+
+#first-container-in-row {
+	margin-left: 0;
+}
+
+.profile-container1 > .text-border {
+	opacity: 0%;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 4px solid white;
+	border-radius: 20px;
+	padding: 37px 22px;
+	width: 200px;
+	height: 300px;
+}
+
+.profile-container2 > .text-border {
+	opacity: 0%;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 4px solid white;
+	border-radius: 20px;
+	padding: 37px 22px;
+	width: 200px;
+	height: 300px;
+}
+
+.profile-text-container {
+	color: white;
+	max-width: 20vw;
+	width: 14vw;
+	height: auto;
+	text-align: left;
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+}
+
+.profile-text-container > p {
+	cursor: default;
+}
+
+.button-content > .centered {
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	transform: translate(-10%, -50%);
+}
+
+.button-content > img {
+	max-width: 40vw;
+}
+
+/* CSS For the Navbar and the Footer */
+/************************************/
+
+header {
+	font-family: 'Bellefair', serif;
+	position: fixed;
+	display: flex;
+	top: 0;
+	left: 0;
+	background-color: black;
+	width: 100%;
+	height: auto;
+	padding-inline: 25px;
+	align-items: center;
+	transition: 0.5s;
+	z-index: 1000;
+}
+
+header.solid {
+	background: transparent;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	transition: all 0.5s;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	margin-inline: 10px;
+	margin-top: 0;
+}
+
+nav a.color-change {
+	color: black;
+}
+
+nav a.color-change:hover:not(.nowActive) {
+	color: grey;
+}
+
+nav a.nowActive, .drop-item.nowActive {
+	color: #f0c455 !important;
+}
+
+a:hover:not(.button-content) {
+	color: grey;
+}
+
+footer {
+	font-family: 'Bellefair', serif;
+	bottom: 0;
+	background-color: black;
+	width: 100%;
+	height: 45vh;
+	margin: 0;
+	align-items: center;
+	color: white;
+	overflow: hidden;
+}
+
+footer nav a {
+    color: white !important;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: grey !important;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 10px;
+	align-items: center;
+	
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+/* Spacing between the social media icons in the footer */
+footer table td a > img {
+	margin-right: 5%;
+}
+
+/* This is for controlling transparency/opacity */
+.overlay {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.4 /* <-- Controls the transparency */ );
+}
+
+#footer-small-text {
+	margin-left: 5%; 
+	max-width: 90%; 
+	text-align: center; 
+	font-size: 0.6rem; 
+	text-transform: uppercase;
+}
+
+/* Controls the height and width of the logo inside the navigation bar */
+.img2 {
+	height: 100px;
+	width: auto;
+	padding: 5px;
+	margin-left: 10px;
+}
+
+/* Controls the height and width of the logo inside the footer */
+.img3 {
+	height: 25vh;
+	width: auto;
+	padding: 5px;
+	margin-left: 20px;
+}
+
+/* Controls the height and width of the social media icons */
+.img4 {
+	height: 6.5vh;
+	width: auto;
+}
+
+/* Controls the height and width of the developer's logo */
+.img5 {
+	height: 19vh;
+	width: auto;
+}
+
+/* Controls the height and width of the ESRB Game Rating */
+.img6 {
+	height: 15vh;
+	width: auto;
+}
+
+/* Controls the link styling for the login/signup button  */
+a.login {
+	text-decoration: none;
+	color: white;
+	font-family: 'Inter', sans-serif;
+	font-size: 13px;
+	text-align: center;
+	position: relative;
+}
+
+/* For toggling JS property on scroll on the login button */
+.color {
+	color: black !important;
+}
+
+/* Controls the button image */
+.login > img {
+	height: 8vh;
+	width: 14vw;
+}
+
+/* Controls the text placement inside the button */
+.login > .centered {
+	position: absolute;
+	top: 43%;
+	left: 45%;
+	transform: translate(-40%, -40%);
+}
+
+/* Controls the whole button's positioning in the navbar */
+.login-button {
+	display: flex;
+	align-items: center;
+	margin-left: 37vw;
+	transition: all 0.2s;
+}
+
+.login-button:hover {
+	transform: scale(1.05);
+}
+
+/* CSS for displaying the username and pfp */
+
+/* Styles the div for the user welcome message */
+.user-welcome {
+	display: inline-flex;
+	align-items: center;
+	margin-left: 37vw;
+	color: white;
+}
+
+.username {
+	text-transform: uppercase;
+}
+
+.user-pfp {
+	margin-inline-start: 20px;
+	margin-inline-end: 10px;
+	height: 50px;
+	width: auto;
+}
+
+.logout-link {
+	text-decoration: none;
+	color: white;
+}
+
+/* CSS For the dropdown menu */
+.dropdown {
+	position: relative;
+	display: inline-block;
+	margin-top: -4px;
+}
+
+.has-dropdown {
+	cursor: default;
+}
+
+.dropdown-menu {
+	display: none;
+	position: absolute;
+	background: black;
+	color: white;
+	height: auto;
+	width: 110px;
+	z-index: 1;
+	padding-top: 20px;
+}
+
+.drop-item {
+	text-decoration: none;
+	color: white;
+	display: block;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 3vh;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+.dropdown-menu.solid {
+	background: transparent;
+}
+
+.drop-item.color-change:not(.nowActive) {
+	color: black;
+}
+
+/* CSS for the responsive navbar */
+
+/* initial state of the burger menu */
+.toggle {
+	display: none;
+}
+
+.navlinks {
+	text-transform: uppercase;
+}
+
+/* Media query for large screens */
+@media all and (max-width: 968px) {
+	header {
+		height: auto;
+		padding: 15px;
+	}
+
+	.user-welcome {
+		position: absolute;
+		margin-left: 32vw;
+		left: 27vw;
+	}
+
+	nav {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	nav > a {
+		display: block;
+		text-align: center;
+		padding: 3vh 3vw;
+		font-size: 1.5rem;
+	}
+
+	.toggle {
+		order: 1;
+		display: block;
+		position: absolute;
+		right: 7vw;
+		top: 5vw;
+		bottom: 3vw;
+	}
+
+	.login-button {
+		margin-left: 9vw;
+		margin-right: 9vw;
+	}
+
+	a.login {
+		font-size: 1rem;
+	}
+
+	.login > .centered {
+		transform: translate(-43%, -170%);
+	}
+
+	.login > img {
+		height: 9vh;
+		width: 30vw;
+	}
+
+	.navlinks {
+		order: 3;
+		width: 100%;
+		text-align: center;
+		display: none;
+	}
+
+	.active > .navlinks {
+		display: block;
+	}
+
+	.active > .user-welcome {
+		display: none;
+	}
+
+	.dropdown.active .dropdown-menu {
+		position: relative;
+		font-size: 1.5rem;
+		margin-left: 39%;
+	}
+
+	.dropdown.active .has-dropdown {
+		display: block;
+		width: 100%;
+		font-size: 1.5rem;
+		margin-top: 3%;
+		margin-bottom: 3%;
+	}
+
+	.img2 {
+		height: 90px;
+		width: auto;
+		padding: 5px;
+		margin-left: 10px;
+	}
+}
+
+/* Media query for medium screens */
+@media all and (max-width: 725px) {
+	header {
+		height: auto;
+		padding: 15px;
+	}
+
+	.user-welcome {
+		position: absolute;
+		left: 3vw;
+		margin-left: 36vw;
+	}
+
+	.userlink {
+		visibility: hidden;
+	}
+
+	nav {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	nav > a {
+		display: block;
+		text-align: center;
+		padding: 3vh 3vw;
+		font-size: 1.2rem;
+	}
+
+	.toggle {
+		order: 1;
+		display: block;
+		position: absolute;
+		right: 7vw;
+		top: 6vw;
+		bottom: 3vw;
+	}
+
+	.login-button {
+		margin-left: 5vw;
+		margin-right: 5vw;
+	}
+
+	a.login {
+		font-size: 1.2rem;
+	}
+
+	.login > .centered {
+		transform: translate(-43%, -120%);
+	}
+
+	.login > img {
+		height: 11vh;
+		width: 33vw;
+	}
+
+	.navlinks {
+		order: 3;
+		width: 100%;
+		text-align: center;
+		display: none;
+	}
+
+	.active > .navlinks, .userlink {
+		display: block;
+	}
+
+	.dropdown.active .dropdown-menu {
+		font-size: 1.2rem;
+		margin-left: 33%;
+	}
+
+	.dropdown.active .has-dropdown {
+		display: block;
+		width: 100%;
+		font-size: 1.2rem;
+		margin-top: 3%;
+		margin-bottom: 3%;
+	}
+
+	.img2 {
+		height: 90px;
+		width: auto;
+		padding: 5px;
+		margin-left: 10px;
+	}
+}
+	
+/* Media query for small screens */
+@media all and (max-width: 600px) {
+	header {
+		height: auto;
+		padding: 15px;
+	}
+
+	.user-welcome {
+		position: absolute;
+		top: 7vw;
+		margin-left: 34vw;
+	}
+
+	nav {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	nav > a {
+		display: block;
+		text-align: center;
+		padding: 3vh 3vw;
+		font-size: 1.2rem;
+	}
+
+	.toggle {
+		order: 1;
+		display: block;
+		position: absolute;
+		right: 10vw;
+		top: 8vw;
+		bottom: 3vw;
+	}
+
+	.login-button {
+		margin-left: 2vw;
+		margin-right: 2vw;
+	}
+
+	a.login {
+		font-size: 0.95rem;
+	}
+
+	.login > .centered {
+		transform: translate(-43%, -150%);
+	}
+
+	.login > img {
+		height: 11vh;
+		width: 33vw;
+	}
+
+	.navlinks {
+		order: 3;
+		width: 100%;
+		text-align: center;
+		display: none;
+	}
+
+	.active > .navlinks {
+		display: block;
+	}
+
+	.dropdown {
+		margin-left: -5%;
+	}
+
+	.dropdown.active .dropdown-menu {
+		font-size: 1.2rem;
+		margin-left: 25%;
+	}
+
+	.dropdown.active .has-dropdown {
+		display: block;
+		width: 100%;
+		font-size: 1.2rem;
+		margin-top: 3%;
+		margin-bottom: 3%;
+	}
+
+	.img2 {
+		height: 90px;
+		width: auto;
+		padding: 5px;
+		margin-left: 10px;
+	}
+}
